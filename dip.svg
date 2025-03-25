@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="890pt" height="410pt" viewBox="0.00 0.00 890.38 409.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 405.6)">
+<title>MappaDipendenze</title>
+<polygon fill="#000000" stroke="none" points="-4,4 -4,-405.6 886.38,-405.6 886.38,4 -4,4"/>
+<!-- HOME -->
+<g id="node1" class="node">
+<title>HOME</title>
+<polygon fill="#333333" stroke="white" points="690.39,-401.6 636.39,-401.6 636.39,-365.6 690.39,-365.6 690.39,-401.6"/>
+<text text-anchor="middle" x="663.39" y="-379.4" font-family="Times,serif" font-size="14.00" fill="white">Home</text>
+</g>
+<!-- LINK1 -->
+<g id="node15" class="node">
+<title>LINK1</title>
+<polygon fill="#555555" stroke="white" points="449.39,-329.6 412.54,-311.6 449.39,-293.6 486.25,-311.6 449.39,-329.6"/>
+<text text-anchor="middle" x="449.39" y="-307.4" font-family="Times,serif" font-size="14.00" fill="white">link</text>
+</g>
+<!-- HOME&#45;&gt;LINK1 -->
+<g id="edge1" class="edge">
+<title>HOME-&gt;LINK1</title>
+<path fill="none" stroke="white" d="M636.29,-373.73C593.21,-359.64 510,-332.43 470.8,-319.6"/>
+</g>
+<!-- LINK2 -->
+<g id="node16" class="node">
+<title>LINK2</title>
+<polygon fill="#555555" stroke="white" points="617.39,-329.6 580.54,-311.6 617.39,-293.6 654.25,-311.6 617.39,-329.6"/>
+<text text-anchor="middle" x="617.39" y="-307.4" font-family="Times,serif" font-size="14.00" fill="white">link</text>
+</g>
+<!-- HOME&#45;&gt;LINK2 -->
+<g id="edge3" class="edge">
+<title>HOME-&gt;LINK2</title>
+<path fill="none" stroke="white" d="M652.02,-365.3C643.94,-352.99 633.24,-336.72 625.89,-325.53"/>
+</g>
+<!-- LINK3 -->
+<g id="node17" class="node">
+<title>LINK3</title>
+<polygon fill="#555555" stroke="white" points="713.39,-329.6 676.54,-311.6 713.39,-293.6 750.25,-311.6 713.39,-329.6"/>
+<text text-anchor="middle" x="713.39" y="-307.4" font-family="Times,serif" font-size="14.00" fill="white">link</text>
+</g>
+<!-- HOME&#45;&gt;LINK3 -->
+<g id="edge5" class="edge">
+<title>HOME-&gt;LINK3</title>
+<path fill="none" stroke="white" d="M675.75,-365.3C684.54,-352.99 696.17,-336.72 704.16,-325.53"/>
+</g>
+<!-- LINK4 -->
+<g id="node18" class="node">
+<title>LINK4</title>
+<polygon fill="#555555" stroke="white" points="816.39,-329.6 779.54,-311.6 816.39,-293.6 853.25,-311.6 816.39,-329.6"/>
+<text text-anchor="middle" x="816.39" y="-307.4" font-family="Times,serif" font-size="14.00" fill="white">link</text>
+</g>
+<!-- HOME&#45;&gt;LINK4 -->
+<g id="edge7" class="edge">
+<title>HOME-&gt;LINK4</title>
+<path fill="none" stroke="white" d="M690.75,-370.09C721.69,-355.93 771.24,-333.26 797.93,-321.05"/>
+</g>
+<!-- SERIE -->
+<g id="node2" class="node">
+<title>SERIE</title>
+<polygon fill="#333333" stroke="white" points="353.39,-254.8 299.39,-254.8 299.39,-218.8 353.39,-218.8 353.39,-254.8"/>
+<text text-anchor="middle" x="326.39" y="-232.6" font-family="Times,serif" font-size="14.00" fill="white">Serie</text>
+</g>
+<!-- SERIE60 -->
+<g id="node6" class="node">
+<title>SERIE60</title>
+<polygon fill="#333333" stroke="white" points="64.79,-180 0,-180 0,-144 64.79,-144 64.79,-180"/>
+<text text-anchor="middle" x="32.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie '60</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE60 -->
+<g id="edge9" class="edge">
+<title>SERIE-&gt;SERIE60</title>
+<path fill="none" stroke="white" d="M299.16,-231.31C252.52,-223.27 154.63,-204.93 74.39,-180 71.39,-179.07 68.3,-178.01 65.22,-176.89"/>
+</g>
+<!-- SERIE70 -->
+<g id="node7" class="node">
+<title>SERIE70</title>
+<polygon fill="#333333" stroke="white" points="147.79,-180 83,-180 83,-144 147.79,-144 147.79,-180"/>
+<text text-anchor="middle" x="115.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie '70</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE70 -->
+<g id="edge10" class="edge">
+<title>SERIE-&gt;SERIE70</title>
+<path fill="none" stroke="white" d="M298.98,-227.36C265.39,-216.88 206.85,-198.15 157.39,-180 154.29,-178.86 151.08,-177.64 147.87,-176.39"/>
+</g>
+<!-- SERIE80 -->
+<g id="node8" class="node">
+<title>SERIE80</title>
+<polygon fill="#333333" stroke="white" points="230.79,-180 166,-180 166,-144 230.79,-144 230.79,-180"/>
+<text text-anchor="middle" x="198.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie '80</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE80 -->
+<g id="edge11" class="edge">
+<title>SERIE-&gt;SERIE80</title>
+<path fill="none" stroke="white" d="M298.93,-220.18C278.37,-208.48 250.23,-192.48 228.95,-180.38"/>
+</g>
+<!-- SERIE90 -->
+<g id="node9" class="node">
+<title>SERIE90</title>
+<polygon fill="#333333" stroke="white" points="313.79,-180 249,-180 249,-144 313.79,-144 313.79,-180"/>
+<text text-anchor="middle" x="281.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie '90</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE90 -->
+<g id="edge12" class="edge">
+<title>SERIE-&gt;SERIE90</title>
+<path fill="none" stroke="white" d="M315.73,-218.55C308.61,-207.03 299.28,-191.93 292.14,-180.38"/>
+</g>
+<!-- SERIE2000 -->
+<g id="node10" class="node">
+<title>SERIE2000</title>
+<polygon fill="#333333" stroke="white" points="408.53,-180 332.26,-180 332.26,-144 408.53,-144 408.53,-180"/>
+<text text-anchor="middle" x="370.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie 2000</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE2000 -->
+<g id="edge13" class="edge">
+<title>SERIE-&gt;SERIE2000</title>
+<path fill="none" stroke="white" d="M336.82,-218.55C343.78,-207.03 352.91,-191.93 359.89,-180.38"/>
+</g>
+<!-- SERIE2010 -->
+<g id="node11" class="node">
+<title>SERIE2010</title>
+<polygon fill="#333333" stroke="white" points="502.53,-180 426.26,-180 426.26,-144 502.53,-144 502.53,-180"/>
+<text text-anchor="middle" x="464.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie 2010</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE2010 -->
+<g id="edge14" class="edge">
+<title>SERIE-&gt;SERIE2010</title>
+<path fill="none" stroke="white" d="M353.66,-221.42C375.97,-209.65 407.6,-192.96 431.35,-180.43"/>
+</g>
+<!-- SERIE2020 -->
+<g id="node12" class="node">
+<title>SERIE2020</title>
+<polygon fill="#333333" stroke="white" points="596.53,-180 520.26,-180 520.26,-144 596.53,-144 596.53,-180"/>
+<text text-anchor="middle" x="558.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Serie 2020</text>
+</g>
+<!-- SERIE&#45;&gt;SERIE2020 -->
+<g id="edge15" class="edge">
+<title>SERIE-&gt;SERIE2020</title>
+<path fill="none" stroke="white" d="M353.81,-228.03C390.06,-217.65 455.83,-198.41 511.39,-180 514.19,-179.07 517.08,-178.09 519.98,-177.09"/>
+</g>
+<!-- COLLEZIONE -->
+<g id="node3" class="node">
+<title>COLLEZIONE</title>
+<polygon fill="#333333" stroke="white" points="664.41,-257.6 566.38,-257.6 566.38,-216 664.41,-216 664.41,-257.6"/>
+<text text-anchor="middle" x="615.39" y="-241" font-family="Times,serif" font-size="14.00" fill="white">Collezione</text>
+<text text-anchor="middle" x="615.39" y="-224.2" font-family="Times,serif" font-size="14.00" fill="white">&amp; Valutazione</text>
+</g>
+<!-- LINK5 -->
+<g id="node19" class="node">
+<title>LINK5</title>
+<polygon fill="#555555" stroke="white" points="651.39,-180 614.54,-162 651.39,-144 688.25,-162 651.39,-180"/>
+<text text-anchor="middle" x="651.39" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">link</text>
+</g>
+<!-- COLLEZIONE&#45;&gt;LINK5 -->
+<g id="edge16" class="edge">
+<title>COLLEZIONE-&gt;LINK5</title>
+<path fill="none" stroke="white" d="M625.42,-215.52C631.5,-203.24 639.09,-187.88 644.49,-176.95"/>
+</g>
+<!-- CURIOSITA -->
+<g id="node4" class="node">
+<title>CURIOSITA</title>
+<polygon fill="#333333" stroke="white" points="750.45,-254.8 682.34,-254.8 682.34,-218.8 750.45,-218.8 750.45,-254.8"/>
+<text text-anchor="middle" x="716.39" y="-232.6" font-family="Times,serif" font-size="14.00" fill="white">Curiosità</text>
+</g>
+<!-- PAGINAITEM -->
+<g id="node13" class="node">
+<title>PAGINAITEM</title>
+<polygon fill="#333333" stroke="white" points="725.02,-108 641.76,-108 641.76,-72 725.02,-72 725.02,-108"/>
+<text text-anchor="middle" x="683.39" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white">Pagina Item</text>
+</g>
+<!-- CURIOSITA&#45;&gt;PAGINAITEM -->
+<g id="edge18" class="edge">
+<title>CURIOSITA-&gt;PAGINAITEM</title>
+<path fill="none" stroke="white" d="M713.1,-218.48C709.51,-199.98 703.47,-169.82 697.39,-144 694.56,-131.96 690.99,-118.48 688.17,-108.13"/>
+</g>
+<!-- WPP -->
+<g id="node5" class="node">
+<title>WPP</title>
+<polygon fill="#333333" stroke="white" points="882.38,-254.8 768.41,-254.8 768.41,-218.8 882.38,-218.8 882.38,-254.8"/>
+<text text-anchor="middle" x="825.39" y="-232.6" font-family="Times,serif" font-size="14.00" fill="white">Web Project Plan</text>
+</g>
+<!-- DETCALC -->
+<g id="node14" class="node">
+<title>DETCALC</title>
+<polygon fill="#333333" stroke="white" points="747.95,-36 618.83,-36 618.83,0 747.95,0 747.95,-36"/>
+<text text-anchor="middle" x="683.39" y="-13.8" font-family="Times,serif" font-size="14.00" fill="white">Dettaglio Calciatore</text>
+</g>
+<!-- PAGINAITEM&#45;&gt;DETCALC -->
+<g id="edge19" class="edge">
+<title>PAGINAITEM-&gt;DETCALC</title>
+<path fill="none" stroke="white" d="M683.39,-71.7C683.39,-60.85 683.39,-46.92 683.39,-36.1"/>
+</g>
+<!-- LINK1&#45;&gt;SERIE -->
+<g id="edge2" class="edge">
+<title>LINK1-&gt;SERIE</title>
+<path fill="none" stroke="white" d="M433.31,-301.08C413.13,-289.13 378.19,-268.46 353.76,-254"/>
+</g>
+<!-- LINK2&#45;&gt;COLLEZIONE -->
+<g id="edge4" class="edge">
+<title>LINK2-&gt;COLLEZIONE</title>
+<path fill="none" stroke="white" d="M616.92,-293.35C616.63,-282.75 616.25,-269.13 615.95,-258.03"/>
+</g>
+<!-- LINK3&#45;&gt;CURIOSITA -->
+<g id="edge6" class="edge">
+<title>LINK3-&gt;CURIOSITA</title>
+<path fill="none" stroke="white" d="M714.09,-293.72C714.57,-282.12 715.2,-266.78 715.68,-255.1"/>
+</g>
+<!-- LINK4&#45;&gt;WPP -->
+<g id="edge8" class="edge">
+<title>LINK4-&gt;WPP</title>
+<path fill="none" stroke="white" d="M818.44,-294.08C819.87,-282.5 821.78,-267.05 823.23,-255.27"/>
+</g>
+<!-- LINK5&#45;&gt;PAGINAITEM -->
+<g id="edge17" class="edge">
+<title>LINK5-&gt;PAGINAITEM</title>
+<path fill="none" stroke="white" d="M657.87,-146.83C662.95,-135.73 670.04,-120.22 675.45,-108.37"/>
+</g>
+</g>
+</svg>

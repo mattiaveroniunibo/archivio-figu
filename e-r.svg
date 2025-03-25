@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318pt" height="332pt" viewBox="0.00 0.00 318.46 332.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<title>MappaConcettuale</title>
+<polygon fill="#000000" stroke="none" points="-4,4 -4,-328 314.46,-328 314.46,4 -4,4"/>
+<!-- UTENTE -->
+<g id="node1" class="node">
+<title>UTENTE</title>
+<ellipse fill="#333333" stroke="white" cx="42.92" cy="-162" rx="36.78" ry="18"/>
+<text text-anchor="middle" x="42.92" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Utente</text>
+</g>
+<!-- R1 -->
+<g id="node6" class="node">
+<title>R1</title>
+<polygon fill="#555555" stroke="white" points="42.92,-108 0,-90 42.92,-72 85.83,-90 42.92,-108"/>
+<text text-anchor="middle" x="42.92" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white">invia</text>
+</g>
+<!-- UTENTE&#45;&gt;R1 -->
+<g id="edge1" class="edge">
+<title>UTENTE-&gt;R1</title>
+<path fill="none" stroke="white" d="M42.92,-143.7C42.92,-132.85 42.92,-118.92 42.92,-108.1"/>
+</g>
+<!-- VALUTAZIONE -->
+<g id="node2" class="node">
+<title>VALUTAZIONE</title>
+<ellipse fill="#333333" stroke="white" cx="97.92" cy="-18" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="97.92" y="-13.8" font-family="Times,serif" font-size="14.00" fill="white">Valutazione</text>
+</g>
+<!-- FIGURINA -->
+<g id="node3" class="node">
+<title>FIGURINA</title>
+<ellipse fill="#333333" stroke="white" cx="152.92" cy="-162" rx="43.76" ry="18"/>
+<text text-anchor="middle" x="152.92" y="-157.8" font-family="Times,serif" font-size="14.00" fill="white">Figurina</text>
+</g>
+<!-- R4 -->
+<g id="node9" class="node">
+<title>R4</title>
+<polygon fill="#555555" stroke="white" points="152.92,-108 103.94,-90 152.92,-72 201.89,-90 152.92,-108"/>
+<text text-anchor="middle" x="152.92" y="-85.8" font-family="Times,serif" font-size="14.00" fill="white">valuta</text>
+</g>
+<!-- FIGURINA&#45;&gt;R4 -->
+<g id="edge7" class="edge">
+<title>FIGURINA-&gt;R4</title>
+<path fill="none" stroke="white" d="M152.92,-143.7C152.92,-132.85 152.92,-118.92 152.92,-108.1"/>
+</g>
+<!-- CALCIATORE -->
+<g id="node4" class="node">
+<title>CALCIATORE</title>
+<ellipse fill="#333333" stroke="white" cx="231.92" cy="-306" rx="50.72" ry="18"/>
+<text text-anchor="middle" x="231.92" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white">Calciatore</text>
+</g>
+<!-- R3 -->
+<g id="node8" class="node">
+<title>R3</title>
+<polygon fill="#555555" stroke="white" points="231.92,-252 153.37,-234 231.92,-216 310.46,-234 231.92,-252"/>
+<text text-anchor="middle" x="231.92" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white">rappresenta</text>
+</g>
+<!-- CALCIATORE&#45;&gt;R3 -->
+<g id="edge5" class="edge">
+<title>CALCIATORE-&gt;R3</title>
+<path fill="none" stroke="white" d="M231.92,-287.7C231.92,-276.85 231.92,-262.92 231.92,-252.1"/>
+</g>
+<!-- DECENNIO -->
+<g id="node5" class="node">
+<title>DECENNIO</title>
+<ellipse fill="#333333" stroke="white" cx="73.92" cy="-306" rx="48.04" ry="18"/>
+<text text-anchor="middle" x="73.92" y="-301.8" font-family="Times,serif" font-size="14.00" fill="white">Decennio</text>
+</g>
+<!-- R2 -->
+<g id="node7" class="node">
+<title>R2</title>
+<polygon fill="#555555" stroke="white" points="73.92,-252 12.05,-234 73.92,-216 135.78,-234 73.92,-252"/>
+<text text-anchor="middle" x="73.92" y="-229.8" font-family="Times,serif" font-size="14.00" fill="white">contiene</text>
+</g>
+<!-- DECENNIO&#45;&gt;R2 -->
+<g id="edge3" class="edge">
+<title>DECENNIO-&gt;R2</title>
+<path fill="none" stroke="white" d="M73.92,-287.7C73.92,-276.85 73.92,-262.92 73.92,-252.1"/>
+</g>
+<!-- R1&#45;&gt;VALUTAZIONE -->
+<g id="edge2" class="edge">
+<title>R1-&gt;VALUTAZIONE</title>
+<path fill="none" stroke="white" d="M53.26,-75.83C62.16,-64.51 75.05,-48.1 84.7,-35.82"/>
+</g>
+<!-- R2&#45;&gt;FIGURINA -->
+<g id="edge4" class="edge">
+<title>R2-&gt;FIGURINA</title>
+<path fill="none" stroke="white" d="M88.77,-219.83C101.92,-208.19 121.11,-191.18 135.08,-178.8"/>
+</g>
+<!-- R3&#45;&gt;FIGURINA -->
+<g id="edge6" class="edge">
+<title>R3-&gt;FIGURINA</title>
+<path fill="none" stroke="white" d="M216.31,-219.17C203.18,-207.54 184.4,-190.9 170.7,-178.76"/>
+</g>
+<!-- R4&#45;&gt;VALUTAZIONE -->
+<g id="edge8" class="edge">
+<title>R4-&gt;VALUTAZIONE</title>
+<path fill="none" stroke="white" d="M142.31,-75.5C133.45,-64.22 120.76,-48.07 111.21,-35.92"/>
+</g>
+</g>
+</svg>

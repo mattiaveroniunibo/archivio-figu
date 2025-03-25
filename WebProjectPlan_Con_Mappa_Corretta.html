@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Project Plan - Archivio Figurine</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Icone Bootstrap (opzionale) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Stile personalizzato di base -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #ccc; /* testo chiaro su sfondo scuro */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    main {
+      background: black;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 5vh;
+    }
+    h1, h2 {
+      color: #d32f2f; 
+      margin-top: 20px;
+    }
+    h3, h4, h5, h6 {
+      color: #5B8FB9;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 1vh;
+      border-radius: 10px;
+      background-color: #202020;
+    }
+    section {
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+    a {
+      color: #5B8FB9;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #d32f2f;
+      text-decoration: underline;
+    }
+    .breadcrumb {
+      margin-left: 2vw; 
+      margin-top: 2vh;
+      background: #222;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .breadcrumb-item a {
+      color: #fff !important;
+    }
+    /* Link dell'indice laterale */
+    #navbar-example3 a.nav-link {
+      color: #ccc;
+    }
+    #navbar-example3 a.nav-link:hover {
+      color: white;
+      background-color: #d32f2f;
+    }
+    /* Box immagini wireframe, ecc. */
+    img {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%;
+      border: 1px solid #444;
+      border-radius: 5px;
+    }
+    /* Scrollspy container */
+    .scrollspy-example {
+      position: relative;
+      height: 80vh;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR OFFCANVAS in alto -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <!-- Bottone Offcanvas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="index.html">Archivio Figurine</a>
+
+    <!-- Pulsante di login -->
+    <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+      <i class="bi bi-person-circle"></i> Accedi
+    </button>
+
+  </div>
+</nav>
+
+<!-- Offcanvas container -->
+<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1"
+     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" 
+            aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="Serie.html">Serie</a></li>
+      <li class="nav-item"><a class="nav-link" href="Collezione.html">Collezione</a></li>
+      <li class="nav-item"><a class="nav-link" href="Curiosita.html">Curiosità</a></li>
+      <li class="nav-item"><a class="nav-link" href="WebProjectPlan_Con_Mappa_Corretta.html" target="_blank">Web Project Plan</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Fine Navbar Offcanvas -->
+
+<!-- Breadcrumb in alto -->
+<div class="breadcrumb">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Web Project Plan</li>
+  </ol>
+</div>
+
+<div class="container-fluid" style="margin-top:80px; margin-bottom:40px;">
+  <div class="row">
+    <!-- Colonna sx: indice scrollspy -->
+    <div class="col-12 col-md-3 mb-4">
+      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">1. L’Idea (Introduzione)</a>
+          <a class="nav-link" href="#item-2">2. Brief</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-2A">2.1 Obiettivi</a>
+            <a class="nav-link ms-3 my-1" href="#item-2B">2.2 Pubblico</a>
+            <a class="nav-link ms-3 my-1" href="#item-2C">2.3 Accesso alla risorsa</a>
+            <a class="nav-link ms-3 my-1" href="#item-2D">2.4 Contenuti e dati</a>
+          </nav>
+          <a class="nav-link" href="#item-3">3. Benchmark</a>
+          <a class="nav-link" href="#item-4">4. Struttura</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-4-1">4.1 Mappa concettuale</a>
+            <a class="nav-link ms-3 my-1" href="#item-4-2">4.2 Schema delle dipendenze</a>
+            <a class="nav-link ms-3 my-1" href="#item-4-3">4.3 Categorie</a>
+          </nav>
+          <a class="nav-link" href="#item-5">5. Layout (Wireframes)</a>
+          <a class="nav-link" href="#item-6">6. Usabilità</a>
+          <a class="nav-link" href="#item-7">7. Servizi</a>
+          <a class="nav-link" href="#item-8">8. Bibliografia e Sitografia</a>
+        </nav>
+      </nav>
+    </div>
+
+    <!-- Colonna dx: contenuto con scrollspy -->
+    <div class="col-12 col-md-9">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" 
+           tabindex="0" class="scrollspy-example" style="height:80vh; overflow:auto;">
+
+        <!-- 1. L’Idea (Introduzione) -->
+        <section id="item-1">
+          <h2>L’Idea (Introduzione)</h2>
+          <p>
+            Il progetto "Archivio Figurine" è un'iniziativa digitale che mira a raccogliere, 
+            catalogare e valorizzare le figurine storiche del calcio italiano, offrendo agli utenti 
+            un'esperienza interattiva e intuitiva. Il sito è progettato per fornire un archivio 
+            completo e dettagliato che permette di esplorare le figurine attraverso le diverse decadi, 
+            con schede descrittive, immagini ad alta risoluzione e approfondimenti storici.
+          </p>
+          <p>
+            L'obiettivo principale del progetto è creare una piattaforma accessibile sia ai collezionisti 
+            esperti che ai semplici appassionati di calcio, garantendo strumenti avanzati di navigazione, 
+            filtri di ricerca per decade, squadra e competizione, nonché funzionalità interattive come 
+            timeline storiche e mappe concettuali. Oltre alla conservazione del patrimonio sportivo, 
+            il sito offre anche una dimensione educativa, consentendo agli utenti di scoprire l'evoluzione 
+            delle figurine nel tempo e il loro impatto culturale.
+          </p>
+          <p>
+            La piattaforma è ottimizzata per garantire un'esperienza fluida su diversi dispositivi, 
+            rendendola facilmente consultabile sia da desktop che da mobile.
+          </p>
+        </section>
+
+        <!-- 2. Brief -->
+        <section id="item-2">
+          <h2>Brief</h2>
+
+          <section id="item-2A">
+            <h4>2.1 Obiettivi</h4>
+            <p>
+              Il sito ha due obbiettivi principali:
+              <ul>
+                <li>Proporre un archivio storico e digitale che raccolga figurine di diverse epoche, 
+                    rendendole fruibili al grande pubblico.</li>
+                <li>Fornire un sistema di navigazione user-friendly e responsive, 
+                    per coinvolgere sia collezionisti esperti che utenti nostalgici.</li>
+              </ul>
+            </p>
+          </section>
+
+          <section id="item-2B">
+            <h4>2.2 Pubblico</h4>
+            <p>
+              Il target comprende collezionisti accaniti di ogni età, e utenti casuali 
+              appassionati di calcio e desiderosi di rivedere vecchi ricordi. 
+              L'interfaccia è pensata per essere intuitiva e graficamente accattivante, 
+              così da attirare anche un pubblico giovane.
+            </p>
+          </section>
+
+          <section id="item-2C">
+            <h4>2.3 Accesso alla risorsa</h4>
+            <p>
+              Il design è multipiattaforma e completamente responsive, 
+              in modo da garantire fruizione sia su smartphone che su schermi desktop. 
+              È stato dato risalto a interfacce semplici, con menu chiari e 
+              tempi di caricamento ridotti.
+            </p>
+          </section>
+
+          <section id="item-2D">
+            <h4>2.4 Contenuti e dati</h4>
+            <p>
+              La base dati del progetto è una raccolta di figurine storiche, 
+              corredate da immagini, descrizioni, anno, rarità e note di contesto. 
+              Le risorse provengono in parte da siti come Panini, e da archivi 
+              di collezionisti privati. Alcuni contenuti, come le curiosità e 
+              le storie iconiche, sono originali (redatti appositamente).
+            </p>
+          </section>
+        </section>
+
+        <!-- 3. Benchmark -->
+        <section id="item-3">
+          <h2>Benchmark</h2>
+          <p>
+            Sono stati analizzati siti come “Figurine Forever”, “Museo Virtuale della Figurina” e 
+            il “Sito Ufficiale Panini” per comprendere quali servizi offrono e quali limiti presentano. 
+            In particolare:
+          </p>
+          <h5>Figurine Forever</h5>
+          <p><strong>Punti di forza:</strong> Recensioni approfondite delle collezioni, immagini dettagliate.</p>
+          <p><strong>Limiti:</strong> Navigazione migliorabile, struttura confusa.</p>
+
+          <h5>Museo Virtuale della Figurina</h5>
+          <p><strong>Punti di forza:</strong> Ampia panoramica storica, archivio di figurine.</p>
+          <p><strong>Limiti:</strong> Design datato, scarsa usabilità.</p>
+
+          <h5>Sito Ufficiale Panini</h5>
+          <p><strong>Punti di forza:</strong> Catalogo completo, vendita online, iniziative digitali.</p>
+          <p><strong>Limiti:</strong> Struttura di navigazione non ottimale, poche sezioni dedicate alla storia.</p>
+
+          <p>
+            Il nostro progetto si distingue per l’attenzione alla dimensione storica e collezionistica, 
+            e per l’adozione di un layout responsive e moderno, con sezioni di curiosità e funzionalità 
+            interattive che i competitor non sempre integrano appieno.
+          </p>
+        </section>
+
+        <!-- 4. Struttura -->
+        <section id="item-4">
+          <h2>Struttura</h2>
+
+          <section id="item-4-1">
+            <h4>4.1 Mappa concettuale</h4>
+            <p>La mappa concettuale rappresenta la struttura e le connessioni tra le varie sezioni del sito.</p>
+            <img src="e-r.svg" alt="Mappa Concettuale">
+            <p>La mappa concettuale a tabelle</p>
+            <img src="schema e-r.png"Mappa Concettuale">
+          </section>
+
+          <section id="item-4-2">
+            <h4>4.2 Schema delle dipendenze</h4>
+            <p>
+              Le relazioni tra le pagine e le sezioni sono mostrate negli schemi sottostanti. 
+              La home collega direttamente alle sezioni principali (Serie, Collezione, Curiosità), 
+              ciascuna delle quali porta a ulteriori sottopagine di dettaglio.
+            </p>
+            <img src="dip.svg" alt="Schema delle Dipendenze">
+        
+          </section>
+
+          <section id="item-4-3">
+            <h4>4.3 Categorie</h4>
+            <p>
+              Le figurine (item) sono descritte tramite alcune etichette: 
+              nome giocatore, anno, squadra, rarità, descrizione, immagine ad alta risoluzione, 
+              e metadati Dublin Core (dc:title, dc:creator, dc:date, dc:description, ecc.).
+            </p>
+          </section>
+        </section>
+
+        <!-- 5. Layout (Wireframes) -->
+        <section id="item-5">
+          <h2>Layout (Wireframes)</h2>
+          <p>
+            Di seguito sono presentati i wireframes delle pagine principali, 
+            che mostrano l’architettura base e la disposizione degli elementi:
+          </p>
+
+          <h4>Home page</h4>
+          <img src="home.png" alt="Wireframe Home">
+
+          <h4>Pagina Serie</h4>
+          <img src="seriee.png" alt="Wireframe Serie">
+
+          <h4>Pagina Figurine</h4>
+          <img src="collezione.png" alt="Wireframe Figurine">
+
+          <h4>Pagina singolo item</h4>
+          <img src="item.png" alt="Wireframe Figurine">
+        </section>
+
+        <!-- 6. Usabilità -->
+        <section id="item-6">
+          <h2>Usabilità</h2>
+          <p><strong>Accessibilità e Navigazione:</strong> menù chiaro e responsive, breadcrumbs, 
+            barra di ricerca e suddivisione per decadi.</p>
+          <p><strong>Compatibilità tra Dispositivi:</strong> layout responsive, test su browser diversi. 
+            Ottimizzazione di performance e caricamento immagini.</p>
+          <p><strong>Ottimizzazione dell’Esperienza Utente:</strong> struttura visiva semplice, 
+            con feedback immediato sui pulsanti e descrizioni brevi. 
+          </p>
+        </section>
+
+        <!-- 7. Servizi -->
+        <section id="item-7">
+          <h2>Servizi</h2>
+          <p>
+            <strong>Funzionalità Implementate:</strong><br>
+            - Ricerca nella tabella di Collezione (filtra per nome giocatore).<br>
+            - Navigazione per decadi (Serie).<br>
+            - Breadcrumb (presente nelle pagine secondarie).<br>
+            - Offcanvas menù con link alle principali sezioni.<br>
+            - Tool integrativo di “Richiedi Valutazione Figurina” (tramite login fittizio).
+            - Tool che permette la visualizzazione della sede tramite i servizi google nella home.
+          </p>
+          <p>
+            <strong>Tecnologie Utilizzate:</strong><br>
+            HTML5, CSS3, Bootstrap, JavaScript (fittizio per il login e la valutazione).
+            Uso di metadati Dublin Core (sia in <head> come meta, sia in body con RDFa)..
+          </p>
+          <p>
+            <strong>Accessibilità e Supporto:</strong><br>
+            Contrasti visivi adeguati, test con screen reader su alcune pagine, 
+            ottimizzazione per dispositivi mobili.
+          </p>
+        </section>
+
+        <!-- 8. Bibliografia e Sitografia -->
+        <section id="item-8">
+          <h2>Bibliografia e Sitografia</h2>
+          <p>Fonti utilizzate per il progetto:</p>
+          <ul>
+            <li><a href="https://www.panini.it/">Panini Ufficiale</a></li>
+            <li><a href="https://www.laststicker.com/">LastSticker</a></li>
+            <li><a href="https://www.stickerpedia.net/">Stickerpedia</a></li>
+            <li><a href="https://www.wikipedia.it/">Wikipedia</a></li>
+            <li><a href="https://it.pinterest.com/">Pinterest</a></li>
+          </ul>
+        </section>
+
+      </div> <!-- fine scrollspy-example -->
+    </div> <!-- fine col-9 -->
+  </div> <!-- fine row -->
+</div> <!-- fine container-fluid -->
+
+<!-- MODALE DI LOGIN (uguale a collezione) -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Accedi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Nome utente</label>
+            <input type="text" class="form-control" id="username" placeholder="Inserisci username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Inserisci password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Accedi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fine modale login -->
+
+<!-- Footer finale -->
+<footer class="text-center mt-4" style="background:#333; color:white; padding:10px;">
+  <p>© 2025 Archivio Figurine</p>
+</footer>
+
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Variabile globale per login fittizio
+  let isLoggedIn = false;
+
+  // Gestione login
+  document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    if(user && pass) {
+      isLoggedIn = true;
+      const loginModalEl = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+      loginModalEl.hide();
+      alert("Login effettuato con successo. Benvenuto, " + user + "!");
+    } else {
+      alert("Inserisci username e password!");
+    }
+  });
+</script>
+
+</body>
+</html>

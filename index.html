@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Metadati generali e Bootstrap -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archivio Storico Figurine</title>
+  
+  <!-- DUBLIN CORE (head) 
+  <meta name="DC.title" content="Archivio Storico Figurine">
+  <meta name="DC.creator" content="Progetto Universitario">
+  <meta name="DC.subject" content="Figurine Calciatori, Collezione Storica, Archivio">
+  <meta name="DC.description" content="Un archivio digitale delle figurine di calciatori suddivise per decade con informazioni storiche e curiosità.">
+  <meta name="DC.publisher" content="Università di Bologna">
+  <meta name="DC.date" content="2025">
+  <meta name="DC.type" content="Collezione Digitale">
+  <meta name="DC.format" content="text/html">
+  
+  <meta name="DC.language" content="it">
+  <meta name="DC.coverage" content="Italia">
+  <meta name="DC.rights" content="Creative Commons Attribution 4.0 International">-->
+
+  <!-- CSS di Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Icone (opzionale) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!-- CSS personalizzato -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar Offcanvas -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <!-- Bottone offcanvas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a class="navbar-brand" href="index.html">Archivio Figurine</a>
+    
+    <!-- Pulsante di login -->
+    <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+      <i class="bi bi-person-circle"></i> Accedi
+    </button>
+
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="Serie.html">Serie</a></li>
+      <li class="nav-item"><a class="nav-link" href="Collezione.html">Collezione</a></li>
+      <li class="nav-item"><a class="nav-link" href="Curiosita.html">Curiosità</a></li>
+      <!-- Link alla pagina del Web Project Plan -->
+      <li class="nav-item"><a class="nav-link" href="WebProjectPlan_Con_Mappa_Corretta.html" target="_blank">Web Project Plan</a></li>
+    </ul>
+    <form class="d-flex mt-3" id="searchForm">
+      <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search" id="searchInput">
+      <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+  </div>
+</div>
+<!-- Fine Navbar Offcanvas -->
+
+<header>
+  <h1>Archivio Storico Figurine</h1>
+</header>
+
+<main>
+
+  <!-- Carousel -->
+  <div id="figurineCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="roberto_baggio.avif" class="d-block w-120" alt="Roberto Baggio">
+      </div>
+      <div class="carousel-item">
+        <img src="del_piero.webp" class="d-block w-120" alt="Alessandro Del Piero">
+      </div>
+      <div class="carousel-item">
+        <img src="cristiano_ronaldo.jpg" class="d-block w-120" alt="Cristiano Ronaldo">
+      </div>
+      <div class="carousel-item">
+        <img src="maradona.jpg" class="d-block w-120" alt="Diego Armando Maradona">
+      </div>
+      <div class="carousel-item">
+        <img src="pirlo.png" class="d-block w-120" alt="Andrea Pirlo">
+      </div>
+      <div class="carousel-item">
+        <img src="rivera.png" class="d-block w-120" alt="Gianni Rivera">
+      </div>
+      <div class="carousel-item">
+        <img src="gigi_riva.jpg" class="d-block w-120" alt="Gigi Riva">
+      </div>
+      <div class="carousel-item">
+        <img src="totti.webp" class="d-block w-120" alt="Francesco Totti">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#figurineCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#figurineCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <h2 class="mt-4">Benvenuto nell'Archivio Storico delle Figurine</h2>
+  <p class="intro-text">Esplora la storia delle figurine dei calciatori più iconici attraverso gli anni.</p>
+  
+  <h3>Giocatori Iconici</h3>
+  <div class="gallery">
+    <!-- Collega ogni immagine alla sua pagina item -->
+    <a href="Baggio.html"><img src="roberto_baggio.avif" alt="Roberto Baggio"></a>
+    <a href="DelPiero.html"><img src="del_piero.webp" alt="Alessandro Del Piero"></a>
+    <a href="Ronaldo.html"><img src="cristiano_ronaldo.jpg" alt="Ronaldo"></a>
+    <a href="Riva.html"><img src="gigi_riva.jpg" alt="Gigi Riva"></a>
+    <a href="Platini.html"><img src="platini.png" alt="Michel Platini"></a>
+    <a href="Lautaro.html"><img src="lautaro.jpeg" alt="Lautaro Martinez"></a>
+    <a href="Gullit.html"><img src="gullit.jpeg" alt="Ruud Gullit"></a>
+    <a href="Buffon.html"><img src="buffon2.jpeg" alt="Gianluigi Buffon"></a>
+    <a href="Totti.html"><img src="totti.webp" alt="Francesco Totti"></a>
+    <a href="Maradona.html"><img src="maradona.jpg" alt="Diego Maradona"></a>
+  </div>
+
+  <h3>Figurine Storiche</h3>
+  <div class="gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 10px; text-align: center;">
+    
+    <a href="pizzaballa.html"><img src="pizzaballa.png" alt="Pierluigi Pizzaballa"></a>
+    <a href="trapattoni.html"><img src="trapattoni.jpg" alt="Giovanni Trapattoni"></a>
+    <a href="rivera.html"><img src="rivera.png" alt="Gianni Rivera"></a>
+  </div>
+
+</main>
+
+<!-- MODALE DI LOGIN  -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Accedi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form di login fittizio -->
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Nome utente</label>
+            <input type="text" class="form-control" id="username" placeholder="Inserisci username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Inserisci password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Accedi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fine modale login -->
+
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script personalizzato (login fittizio, isLoggedIn) -->
+<script>
+  // Variabile globale per simulare se l’utente è loggato
+  let isLoggedIn = false;
+
+  // Gestione login fittizio
+  document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    if(user && pass) {
+      isLoggedIn = true;
+      // Chiudo la modale
+      const loginModalEl = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+      loginModalEl.hide();
+      alert("Login effettuato con successo. Benvenuto, " + user + "!");
+    } else {
+      alert("Inserisci username e password!");
+    }
+  });
+</script>
+
+<!-- Eventuale script di ricerca (se serve) -->
+<script src="resize_figures.js"></script>
+
+<!-- Tool Integrativo: Collegamento Google Maps -->
+<section class="container text-center my-5">
+  <h3 class="mb-3">Dove siamo?</h3>
+  <p>La sede del progetto Archivio Figurine si trova a Bologna, presso Porta San Donato 1.</p>
+
+  <p>La nostra mail: archiviofigurine@gmail.com</p>
+
+
+  <a href="https://www.google.com/maps/place/Porta+San+Donato,+40126+Bologna+BO/" 
+     class="btn btn-outline-light" 
+     target="_blank">
+    <i class="bi bi-geo-alt-fill"></i> Visualizza su Google Maps
+  </a>
+</section>
+
+
+<footer class="text-center mt-4">
+  <p>© 2025 Archivio Figurine</p>
+</footer>
+
+</body>
+</html>

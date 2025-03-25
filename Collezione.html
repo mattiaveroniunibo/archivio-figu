@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Collezione &amp; Valutazione Figurine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS + Icone -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- CSS personalizzato -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar Offcanvas -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <!-- Offcanvas toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="index.html">Archivio Figurine</a>
+
+    <!-- Pulsante di Login a destra -->
+    <button class="btn btn-outline-light" type="button" data-bs-toggle="modal"
+            data-bs-target="#loginModal">
+      <i class="bi bi-person-circle"></i> Accedi
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1"
+     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menù</h5>
+    <button type="button" class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="Serie.html">Serie</a></li>
+      <li class="nav-item"><a class="nav-link" href="Collezione.html">Collezione</a></li>
+      <li class="nav-item"><a class="nav-link" href="Curiosita.html">Curiosità</a></li>
+      <li class="nav-item"><a class="nav-link" href="WebProjectPlan_Con_Mappa_Corretta.html" target="_blank">Web Project Plan</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Fine Navbar -->
+
+<div class="container mt-5 pt-5">
+  <!-- BREADCRUMB -->
+  <nav aria-label="breadcrumb" class="mt-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Collezione</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container mt-3">
+  <h2 class="text-center">Collezione &amp; Valutazione Figurine</h2>
+  <p class="text-center">
+    Scopri le figurine più rare, i loro valori di mercato e tante altre curiosità.
+    <br>
+    <strong>Se vuoi richiedere una valutazione della <u>tua</u> figurina, effettua il login e compila il form in basso!</strong>
+  </p>
+
+  <!-- Form di ricerca (filtra i giocatori nella tabella) -->
+  <form class="d-flex mb-3 justify-content-center" id="searchFormRare">
+    <input class="form-control w-25 me-2" type="search" placeholder="Cerca Giocatore" aria-label="Search" id="searchInputRare">
+    <button class="btn btn-outline-light" type="submit">
+      <i class="bi bi-search"></i> Cerca
+    </button>
+  </form>
+
+  <!-- Tabella con figurine rare esistenti (di archivio) -->
+  <table class="table table-dark table-striped" id="tableRare">
+    <thead>
+      <tr>
+        <th>Giocatore</th>
+        <th>Anno</th>
+        <th>Rarità</th>
+        <th>Valore (€)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="Baggio.html" class="text-decoration-none text-white">Roberto Baggio</a></td>
+        <td>1994</td>
+        <td>Molto Rara</td>
+        <td>500€</td>
+      </tr>
+      <tr>
+        <td><a href="Maradona.html" class="text-decoration-none text-white">Diego Maradona</a></td>
+        <td>1986</td>
+        <td>Rarissima</td>
+        <td>1200€</td>
+      </tr>
+      <tr>
+        <td><a href="Totti.html" class="text-decoration-none text-white">Francesco Totti</a></td>
+        <td>2001</td>
+        <td>Rara</td>
+        <td>300€</td>
+      </tr>
+      <tr>
+        <td><a href="Maldini.html" class="text-decoration-none text-white">Paolo Maldini</a></td>
+        <td>1995</td>
+        <td>Rara</td>
+        <td>250€</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Sezione "Richiedi Valutazione" di una figurina personale -->
+  <div class="text-center mt-4">
+    <h4>Richiedi una valutazione della <u>tua</u> figurina</h4>
+    <button class="btn btn-primary" onclick="openValuationModal()">
+      <i class="bi bi-envelope-check"></i> Richiedi Valutazione
+    </button>
+  </div>
+
+</div>
+
+<footer class="text-center mt-5">
+  <p>© 2025 Archivio Figurine</p>
+</footer>
+
+<!-- ===================================
+     MODALE DI LOGIN
+=================================== -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Accedi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form di login fittizio -->
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Nome utente</label>
+            <input type="text" class="form-control" id="username" placeholder="Inserisci username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Inserisci password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Accedi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================
+     MODALE DI RICHIESTA VALUTAZIONE
+=================================== -->
+<div class="modal fade" id="valuationModal" tabindex="-1" aria-labelledby="valuationModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="valuationModalLabel">Richiedi Valutazione</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form fittizio per inviare i dati della figurina personale -->
+        <form id="valuationForm">
+          <!-- Nome utente (non necessariamente lo stesso del login) -->
+          <div class="mb-3">
+            <label for="valutNome" class="form-label">Il tuo Nome</label>
+            <input type="text" class="form-control" id="valutNome" placeholder="Mario Rossi" required>
+          </div>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="valutEmail" class="form-label">La tua Email</label>
+            <input type="email" class="form-control" id="valutEmail" placeholder="nome@esempio.com" required>
+          </div>
+          <!-- Nome del giocatore sulla figurina -->
+          <div class="mb-3">
+            <label for="valutGiocatore" class="form-label">Giocatore</label>
+            <input type="text" class="form-control" id="valutGiocatore" placeholder="Es: Alessandro Del Piero" required>
+          </div>
+          <!-- Anno della figurina -->
+          <div class="mb-3">
+            <label for="valutAnno" class="form-label">Anno della Figurina</label>
+            <input type="number" class="form-control" id="valutAnno" placeholder="Es: 2004" required>
+          </div>
+          <!-- Caricamento immagine (fittizio, non carica realmente su un server) -->
+          <div class="mb-3">
+            <label for="valutImmagine" class="form-label">Immagine della figurina</label>
+            <input type="file" class="form-control" id="valutImmagine" accept="image/*">
+            <small class="text-muted">Puoi caricare un'immagine in formato JPG o PNG, max 2MB.</small>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100 mt-3">
+            Invia Richiesta
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS + Script custom -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+/* Variabile per simulare se l’utente è loggato */
+let isLoggedIn = false;
+
+/* Gestione login fittizio */
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  if(user && pass) {
+    isLoggedIn = true;
+    // Chiudi modale login
+    const loginModalEl = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+    loginModalEl.hide();
+    alert("Login effettuato con successo, benvenuto " + user + "!");
+  } else {
+    alert("Inserisci username e password!");
+  }
+});
+
+/* Apertura modale di valutazione */
+function openValuationModal() {
+  if(!isLoggedIn) {
+    alert("Devi effettuare il login per richiedere la valutazione!");
+    const loginModalEl = new bootstrap.Modal('#loginModal');
+    loginModalEl.show();
+    return;
+  }
+  // Se loggato, mostra la modale Valuation
+  const valuationModal = new bootstrap.Modal('#valuationModal');
+  valuationModal.show();
+}
+
+/* Gestione submit del form di valutazione */
+document.getElementById("valuationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Recupero i campi
+  const nomeUtente = document.getElementById("valutNome").value;
+  const email = document.getElementById("valutEmail").value;
+  const giocatore = document.getElementById("valutGiocatore").value;
+  const anno = document.getElementById("valutAnno").value;
+  const fileImmagine = document.getElementById("valutImmagine").files[0]; // eventuale immagine
+
+  // Chiudo la modale
+  const modalVal = bootstrap.Modal.getInstance(document.getElementById("valuationModal"));
+  modalVal.hide();
+
+  // Alert di conferma (fittizio)
+  let messaggio = "Richiesta di valutazione inviata!\n\n" +
+                  "Nome: " + nomeUtente + "\n" +
+                  "Email: " + email + "\n" +
+                  "Giocatore: " + giocatore + "\n" +
+                  "Anno: " + anno + "\n";
+  if(fileImmagine) {
+    messaggio += "Hai allegato l'immagine: " + fileImmagine.name + "\n";
+  }
+  alert(messaggio);
+});
+
+/* Ricerca testuale nella tabella */
+document.getElementById('searchFormRare').addEventListener('submit', function(event) {
+  event.preventDefault();
+  let input = document.getElementById('searchInputRare').value.toLowerCase();
+  let rows = document.querySelectorAll('#tableRare tbody tr');
+  rows.forEach(row => {
+      let giocatore = row.cells[0].textContent.toLowerCase();
+      row.style.display = giocatore.includes(input) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>
